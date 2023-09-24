@@ -1,0 +1,99 @@
+.btn-action-primary {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  z-index: 2;
+}
+
+.btn-action-secondary {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #000000 !important;
+  color: #000000 !important;
+  z-index: 2;
+}
+
+.ant-upload {
+  background-color: #fcfcfc !important;
+}
+
+.avatar-btn-main {
+  position: relative;
+  overflow: hidden;
+  width: 85px;
+  height: 85px;
+
+  .avatar-btn-overlay {
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 12%;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  &:hover .avatar-btn-overlay {
+    opacity: 1;
+  }
+  .avatar-btn-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12%;
+  }
+  .avatar-action {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12%;
+    opacity: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover .avatar-action {
+    opacity: 1;
+  }
+}
+
+.action-btn {
+  width: 2rem;
+  height: 2rem;
+  padding: 0 !important;
+}
+
+.action-btn.btn-delete:hover {
+  background-color: rgba(247, 199, 199, 1);
+  border-color: rgba(247, 199, 199, 1);
+}
+.avatar-file {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #455560;
+  border-radius: 12%;
+  .avatar-btn-file {
+    font-weight: 300;
+    font-size: 4rem;
+  }
+}
